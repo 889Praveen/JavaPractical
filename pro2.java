@@ -4,7 +4,7 @@ public class pro2
     public static void main(String args[])
     {
         int i;
-        String[] str=new String[5];
+        String[] str=new String[args.length];
         
         for(i=0;i<args.length;i++)
         {
@@ -13,15 +13,16 @@ public class pro2
         System.out.println("Before String");
         for(i=0;i<args.length;i++)
         {
-            System.out.println("String:"+str[i]);
+            System.out.println(str[i]);
         }
-
+   
         Arrays.sort(str);
          System.out.println("After Sort String");
          
         for(i=0;i<args.length;i++)
         {
-            System.out.println("String"+str[i]);
+            System.out.println(str[i]);
         }
+ 
     }
 }
